@@ -19,3 +19,11 @@
 -NetfixGpt
     -search bar
     -movie suggestions
+
+
+
+
+
+# ADDITIONAL INFO
+ --USE FORMIK REACT LIBARY FROM LARGE FORM FIELD
+ # https://formik.org/
