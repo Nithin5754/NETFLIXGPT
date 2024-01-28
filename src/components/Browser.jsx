@@ -1,6 +1,10 @@
+import {Header} from "./index"
+
 const Browser = () => {
   return (
-    <div>Browser</div>
+    <div >
+      <Header/>
+    </div>
   )
 }
 export default Browser
