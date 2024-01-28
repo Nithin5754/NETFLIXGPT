@@ -14,7 +14,7 @@ const Login = () => {
   const [isError,setError]=useState('')
 
   
-const navigate=useNavigate()
+
 const email=useRef(null)
 const password=useRef(null)
 const name=useRef(null)
@@ -35,13 +35,7 @@ const handleSubmit=()=>{
     console.log(user);
     updateProfile(user, {
       displayName:name.current.value
-    }).then(() => {
-      const {uid,email,displayName} = auth.currentUser;
-      console.log(user);
-      dispatch(addUsers({uid:uid,email:email,displayName:displayName}))
-      navigate('/browser')
-      
-    }).catch((error) => {
+    }).then(() => {}).catch((error) => {
       setError(error)
     });
   
@@ -59,7 +53,7 @@ const handleSubmit=()=>{
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    navigate('/browser')
+   
     
   })
   .catch((error) => {
@@ -73,7 +67,7 @@ const handleSubmit=()=>{
 
   return (
     <div >
-<Header/>
+
 <div className="absolute w-full h-full  flex items-center justify-center">
 <img className="w-full h-full" src="https://assets.nflxext.com/ffe/siteui/vlv3/9134db96-10d6-4a64-a619-a21da22f8999/a449fabb-05e4-4c8a-b062-b0bec7d03085/IN-en-20240115-trifectadaily-perspective_alpha_website_medium.jpg" alt="" />
 </div>

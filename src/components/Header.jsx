@@ -1,23 +1,22 @@
 import { FaUserCircle } from 'react-icons/fa';
-import {  useDispatch, useSelector } from 'react-redux';
-import {  signOut } from "firebase/auth";
+import { useSelector } from 'react-redux';
+import { signOut } from "firebase/auth";
 import { auth } from '../utils/firebase';
-import { useNavigate } from 'react-router-dom';
-import { removeUsers } from '../utils/userSlice';
+
+
 
 const Header = () => {
   const user=useSelector((store)=>store.user)
-  const dispatch=useDispatch()
-  const navigate=useNavigate()
   console.log(user);
 const handleLogout=()=>{
   console.log("hello");
-  signOut(auth).then(() => {
-    navigate('/')
-  }).catch((error) => {
+  signOut(auth).then(() => {}).catch((error) => {
     console.log(error);
   });
 }
+
+
+
 
   return (
 <div className="absolute z-50 w-[100vw] bg-gradient-to-br from-black p-2 flex justify-between">

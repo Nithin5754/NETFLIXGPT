@@ -1,9 +1,17 @@
-import {Header} from "./index"
+
+// import { useEffect } from 'react';
+import { useNowPlaying } from '../Hooks/useNowPlayingHook';
+import { MainContainer,SecondaryContainer } from "./index";
+
+
 
 const Browser = () => {
+
+  useNowPlaying()
   return (
     <div >
-      <Header/>
+ <MainContainer/>
+ <SecondaryContainer/>
     </div>
   )
 }

@@ -12,6 +12,11 @@
 9. implement sign out
 10. update profile-displayName
 11. userSlice for redux store
+12. unscribed to onauthstatechanged callback
+13. reg for TMDB API- 
+    # https://www.themoviedb.org/settings/api
+    # https://developer.themoviedb.org/reference/movie-now-playing-list
+14.     
 
 
 
