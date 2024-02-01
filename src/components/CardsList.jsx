@@ -10,10 +10,10 @@ const CardsList = ({title,nowPaylingList}) => {
 <div className="flex overflow-x-scroll  no-scrollbar">
 <div className="flex  gap-4">
    {
-    nowPaylingList?.map((now,index)=>{
+    nowPaylingList?.map((now)=>{
       const {poster_path,original_title}=now
       return(
-        <Cards key={index} poster_path={poster_path} original_title={original_title}/>
+        <Cards poster_path={poster_path} original_title={original_title}/>
       )
     })
    }

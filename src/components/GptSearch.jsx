@@ -4,7 +4,7 @@ import { backGroundImage } from "../utils/constant";
 const GptSearch = () => {
   return (
     <div>
-         <div className="absolute">
+         <div className="fixed h-[100vh] w-[100vw]">
         <img
           className="w-full h-full"
           src={backGroundImage}
