@@ -2,23 +2,24 @@
 
 import {options} from '../utils/constant'
 import { useDispatch } from 'react-redux';
-import { addMovies } from '../utils/movieSlice';
+import { addPopularmovies } from '../utils/movieSlice';
 import { useEffect } from 'react';
 
 
 
 
-export const useNowPlaying=()=>{
+export const usePopularMovies=()=>{
   const dispatch=useDispatch()
   const fetchNowPlaying=async()=>{
      try {
-      const response=await fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', options)
+      const response=await fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', options)
       let data= await response.json();
 
-      dispatch(addMovies(data.results))
+
+      dispatch(addPopularmovies(data.results))
 
      } catch (error) {
-      console.log(error,"error fetching-now playing data from TMDB database api");
+      console.log(error,"error fetching-poplar movies data from TMDB database api");
      }
        
      } 
