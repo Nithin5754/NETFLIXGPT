@@ -2,7 +2,7 @@ export  const options = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer'+process.env.REACT_APP_OPTIONS
+    Authorization: 'Bearer'+import.meta.env.VITE_REACT_APP_OPTIONS
   }
 };
 
@@ -23,4 +23,4 @@ export const language=[
 ]
 
 
-export const GPT_KEY=process.env.REACT_APP_GPT_KEY
+export const GPT_KEY=import.meta.env.VITE_REACT_APP_GPT_KEY
