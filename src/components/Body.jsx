@@ -1,6 +1,6 @@
 import { Login,Browser } from "./index";
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
-import HeaderSharedLayout from "../layouts/headerSharedLayout.jsx";
+import HeaderSharedLayout from "../layouts/HeaderSharedLayout.jsx";
 
 
 const Body = () => {
